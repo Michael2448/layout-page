@@ -1,0 +1,255 @@
+.full-header {
+	background-color: white;
+	padding-bottom: 30px;
+}
+.black-bar {
+	padding: 20px 0 10px 0;
+
+	background-color: #00122f; 
+	color: white;
+
+	font-size: 8px;
+	min-height: 55px;
+}	
+
+.actual-date {
+	font-size: 16px;
+}
+.logo {
+	margin-right: 40px;
+	height: 40px;
+}
+.town-choise {
+	margin-right: 30px;
+	margin-top: 15px;
+	padding-right: 15px;
+
+	background-image: url("img/down-arrow.png");
+	background-repeat: no-repeat;
+	background-position: right center;
+
+	font-size: 16px;
+	color: #669ed2;	
+}
+	.town {
+		border-bottom: 2px dashed; 
+	}
+.top-header {
+	padding-top: 38px;
+	margin-bottom: 15px;
+
+	position: relative;
+	display: flex;
+}
+.date-of-town {
+	margin-right: 18px;
+	padding-top: 15px;
+
+	font-size: 16px;
+	color: #91919f;
+}
+.time-of-town {
+	margin-left: 30px;
+	padding-left: 20px;
+
+	background-image: url("img/clock.png");
+	background-repeat: no-repeat;
+}
+.weather {
+	padding-left: 39px;
+	padding-top: 15px;
+	margin-right: 25px;
+
+	background-image: url("img/weather.png");
+	background-repeat: no-repeat;
+	background-position: left bottom;
+
+	font-size: 16px;
+	color: #91919f;
+}
+.search-form {
+	position: relative;
+}
+.search-field {
+	padding: 15px 35px 15px 15px;
+
+	background-color: #f3f3f3;
+
+	border-radius: 50px;
+	border: none;
+
+	width: 319px;
+}
+.button-search {
+	padding: 10px;
+
+	background-image: url("img/search.png");
+	background-repeat: no-repeat;
+
+	position: absolute;
+	top: 14px;
+	right: 15px;
+
+	border: none;
+}
+.list {
+	margin: 0;
+	padding-left: 0;
+}
+	.item {
+		position: relative;
+		display: inline;
+		margin-right: 35px;
+
+	}
+	.item::before {
+		position: absolute;
+		left: -20px;
+		content: "/";
+		color: #e1e1e4;
+	}
+	.list .item:first-child::before {
+		content: "";
+	} 
+.header-site {
+	margin: 0;
+	font-weight: normal;
+}
+.news-link {
+	text-decoration: underline;
+}
+.top-nav {
+	padding-top: 20px;
+
+	font-size: 16px;
+}
+.nav-menu-for-mobile {
+	width: 18px;
+	height: 18px;
+	border: none;
+	background-image: url('img/menumobil.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.nav-menu-for-mobile, .logo-for-mobil, .bottom-header-for-mobile {
+	display: none;
+}
+.date-of-town-mobile {
+	margin-right: 18px;
+
+	vertical-align: 13px;
+	font-size: 16px;
+	color: #91919f;
+}
+.weather-mobile {
+	padding-left: 39px;
+	padding-top: 4px;
+	vertical-align: 13px;
+
+	background-image: url("img/cloudy.png");
+	background-repeat: no-repeat;
+
+
+	font-size: 16px;
+	color: #91919f;
+}
+.opening-mobile-menu-img {
+	margin-right: 340px;
+	width: 18px;
+	background-image: url('img/close.png');
+	background-size: contain;
+}
+.gradient-background-mobile {
+	display: none;
+	height: 20px;
+	background-image: linear-gradient(to top,#ffffff, #f3f3f3)
+}
+
+@media (max-width: 1200px) {
+	.search-field {
+		margin-top: 20px;
+	}
+	.button-search {
+		top: 34px;
+	}
+	.top-header {
+		margin-bottom: 0;
+	}
+}
+@media (max-width: 807px) {
+	.gradient-background-mobile {
+		display: block;
+	}
+	.top-nav, .town-choise, .logo, .search-field, .date-of-town, .weather {
+		display: none;
+	}
+	.top-nav {
+		padding: 0;
+		font-size: 18px;
+		background-image: linear-gradient(to top,#f3f3f3, #ffffff)
+	}
+	.top-nav .list {
+		padding: 0 20px;
+	}
+	.top-nav .list .item {
+		padding: 10px 0 10px 0;
+		margin-right: 0;
+		border-bottom: 1px #ebebeb solid;
+		display: block;
+	}
+		.item::before {
+			content: "";
+		}
+		.list .item:last-child {
+			border-bottom: none;
+		} 
+	.nav-menu-for-mobile, .logo-for-mobil {
+		display: inline;
+		margin-right: 30px;
+	}
+	.black-bar {
+		padding-top: 15px;
+		min-height: 50px;
+	}
+	.flex-bar {
+		display: flex;
+		justify-content: center;
+	}
+
+	.nav-menu-for-mobile {
+		margin-top: 3px;
+	}
+	.top-header {
+		padding-top: 15px;
+		padding-bottom: 10px;
+		margin-bottom: 12px;
+		min-height: 40px;
+		justify-content: center;
+		
+	}
+
+	.bottom-header-for-mobile {
+		display: flex;
+		padding: 30px 0 26px 0;
+
+		background-image: linear-gradient(to top,#f9f9f9, #efefef)
+	}
+	.button-search {
+		background-color: #fff;
+		position: static;
+	}
+	.full-header {
+		padding-bottom: 0;
+	}
+	.actual-date {
+		display: none;
+	}
+	.header-site {
+		font-size: 13px;
+	}
+}
+
+.active {
+	display: block;
+}
